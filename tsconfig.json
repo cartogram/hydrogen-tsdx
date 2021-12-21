@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": ["packages", "types", "scripts", "example"],
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      "@shopify/hydrogen": ["packages/hydrogen/src"],
+      "@shopify/utils": ["packages/utils/src"],
+      "@shopify/react": ["packages/react/src"],
+      "eslint-plugin-hydrogen": ["packages/eslint-plugin/src"],
+      "$test/*": ["test/*"]
+    }
+  }
+}

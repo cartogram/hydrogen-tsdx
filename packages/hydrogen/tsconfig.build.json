@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "exclude": ["**/__tests__", "**/tests", "./framework", "**/*.example.*"],
+  "include": ["src", "types", "../../types"]
+}
